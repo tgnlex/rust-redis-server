@@ -13,6 +13,8 @@ async fn add_values() -> Result<()> {
   /* Set Values */
   client.set("test", "value".into()).await?;
   client.set("foo", "newbar".into()).await?;
+  client.set("the", "game".into()).await?;
+  client.set("chromosomes", "7".into()).await?;
   Ok(())
 }
 

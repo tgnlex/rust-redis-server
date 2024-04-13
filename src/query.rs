@@ -9,9 +9,11 @@ async fn main() -> Result<()> {
   let result_1 = client.get("foo").await?;
   let result_2 = client.get("new").await?;
   let result_3 = client.get("test").await?;
+  let result_4 = client.get("chromosomes").await?;
   format_query(1, "foo", result_1).await;
   format_query(2, "new", result_2).await;
   format_query(3, "test", result_3).await;
+  format_query(4, "chromosomes", result_4).await;
   Ok(())
 }
 
